@@ -1,0 +1,30 @@
+{
+    "manifest_version": 3,
+    "name": "Pin Paragraph for WordCount",
+    "description": "Toggle Paragraph Word Count when Pinned using ShadowDOM",
+    "version": "1.0",
+    "icons": {
+    "48": "assets/pushpin-fill-48.png"
+    },
+    "action": {
+        "default_icon": "assets/pushpin-fill-24.png"
+    },
+    "web_accessible_resources": [
+      {
+        "resources": [ "assets/*.png", "css/style.css" ],
+        "matches": ["<all_urls>"]
+      }
+    ],
+    "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": [
+        "https://developer.chrome.com/docs/extensions/*",
+        "https://developer.chrome.com/docs/webstore/*"
+      ],
+      "run_at": "document_end"
+    }
+  ]
+
+}
+  

@@ -1,0 +1,39 @@
+.shadowbtn {
+    height: 16px;
+    width: 16px;
+    border: none;
+    border-radius: 3px;
+    background-color: #ffa200;
+    padding: 0;
+
+    /* put it in bottom right */
+    position:absolute;
+    bottom:5px;
+    right:5px;
+}
+
+.shadowbtn img {
+    height: 100%;
+    width: 100%;
+}
+
+.shadowbtn:hover {
+    background-color: white
+}
+
+.basediv {
+    border-radius: 5px;
+    position: relative;
+}
+
+.wordcount {
+    height: 16px;
+    position: absolute;
+    font-size: 10px;
+    right: 25px;
+    bottom: 0;
+    background-color: #ffa200;
+    border-radius: 3px;
+    padding: 0 5px;
+    margin: 5px 0px;
+}
